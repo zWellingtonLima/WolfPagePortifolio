@@ -1,5 +1,5 @@
 # WolfPagePortifolio
- Only HTML & CSS imaginary portifolio page.
+ Only HTML & CSS portfolio page.
 
 https://zwellingtonlima.github.io/WolfPagePortifolio/
 
