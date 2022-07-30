@@ -58,34 +58,13 @@ header menu a {
   font-weight: bold;
 }
 
-@media(min-width: 320px) and (max-width: 425px) {
-  header nav{
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    justify-content: center;
-  }
-
-  header menu{
-    /* flex-wrap: wrap; */
-    margin-top: 5px;
-  }
-
-  header menu a{
-    display: block;
-    padding: 10px 10px;
-    font-size: 1rem;
-    margin: 5px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-  }
-}
-
 #introducao, #experience, #formacao, #formacao-container{
   margin: auto;
 }
 
 #perfil{
   width: 100%;
+  margin-left: 20px;
 }
 
 #introducao{
@@ -120,37 +99,6 @@ header menu a {
   color: rgb(73, 73, 73);
   padding: 0px 80px;
   margin-top: -40px;
-}
-
-@media(min-width: 320px) and (max-width: 425px) {
-  #introducao{
-    grid-template-columns: 1fr;
-    margin-bottom: 0;
-  }
-  
-  #introducao h1{
-    padding-top: 0;
-    margin-top: 0;
-    font-size: 2.5rem;
-    padding: 20px;
-  }
-
-  #introducao h1::before{
-    width: 30px;
-    height: 10px;
-    left: 10;
-    top: 10;
-  }
-
-  #introducao p{
-    font-size: 1rem;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  #introducao img{
-    display: none;
-  }
 }
 
 #experience{
@@ -212,55 +160,6 @@ header menu a {
   background-color: white;
   padding: 6px;
   border-radius: 4px;
-}
-
-@media(min-width: 320px) and (max-width: 425px) {
-  #experience{
-    grid-template-columns: 1fr;
-  }
-
-  #experience h1{
-    font-size: 3rem;
-    text-align: center;
-    padding: 0 20px;
-    line-height: 7rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 90%;
-  }
-
-  #text-p-experience{
-    margin-left: 0px;
-    padding: 0 20px;
-    margin-bottom: 30px;
-    font-size: 1rem;
-    color: rgb(110, 110, 110);
-  }
-
-  .exp-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px;
-    background-color: rgb(230, 230, 230);
-    width: 90%;
-    height: auto;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding-bottom: 0;
-  }
-
-  .exp-container h2{
-    font-size: 1.2rem;
-  }
-
-  .exp-container h3{
-    font-size: 1rem;
-  }
-
-  .exp-container p{
-    margin-bottom: 15px;
-  }
 }
 
 #formacao{
@@ -357,6 +256,183 @@ header menu a {
   margin-bottom: 40px;
 }
 
+#contato{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+  height: 70vh;
+  place-items: center;
+  padding: 20px;
+}
+
+#contato h2{
+  color: rgb(184, 184, 184);
+  width: 600px;
+}
+
+#contato p{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: rgb(194, 194, 194);
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media(max-width: 820px){
+  
+  #introducao h1{
+    font-size: 3rem;
+  }
+
+  #perfil{
+    min-width: 200px;
+  }
+}
+
+@media(max-width: 650px){
+  #introducao{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #perfil{
+    display: none;
+  }
+
+  #introducao h1{
+    font-size: 4rem;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  #introducao p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media(max-width: 600px){
+  header nav{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #introducao h1{
+    font-size: 3rem;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 425px) {
+  #experience{
+    grid-template-columns: 1fr;
+  }
+
+  #experience h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 7rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  #text-p-experience{
+    margin-left: 0px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: rgb(110, 110, 110);
+  }
+
+  .exp-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    background-color: rgb(230, 230, 230);
+    width: 90%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-bottom: 0;
+  }
+
+  .exp-container h2{
+    font-size: 1.2rem;
+  }
+
+  .exp-container h3{
+    font-size: 1rem;
+  }
+
+  .exp-container p{
+    margin-bottom: 15px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 425px) {
+  header nav{
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+
+  header menu{
+    /* flex-wrap: wrap; */
+    margin-top: 5px;
+  }
+
+  header menu a{
+    display: block;
+    padding: 10px 10px;
+    font-size: 1rem;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 425px) {
+  #introducao{
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+  
+  #introducao h1{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+
+  #introducao h1::before{
+    width: 30px;
+    height: 10px;
+    left: 10;
+    top: 10;
+  }
+
+  #introducao p{
+    font-size: 1rem;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #introducao img{
+    display: none;
+  }
+}
+
 @media(min-width: 320px) and (max-width: 425px) {
   #formacao-container{
     grid-template-columns: 1fr;
@@ -389,26 +465,6 @@ header menu a {
   }
 }
 
-#contato{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: black;
-  height: 70vh;
-  place-items: center;
-  padding: 20px;
-}
-
-#contato h2{
-  color: rgb(184, 184, 184);
-  width: 600px;
-}
-
-#contato p{
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 @media(min-width: 320px) and (max-width: 425px){
   #contato{
     grid-template-columns: 1fr;
@@ -423,13 +479,4 @@ header menu a {
     font-size: 1rem;
     width: 100%;
   }
-}
-
-footer{
-  text-align: center;
-  background-color: black;
-  color: rgb(194, 194, 194);
-  padding: 10px;
-  font-size: 1.3rem;
-  font-weight: bold;
 }
